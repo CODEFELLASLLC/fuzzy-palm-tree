@@ -1,0 +1,99 @@
+/* newsUpdateStyles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #a8e6ff, #dff9fb); /* Light blue gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333; /* Improved text color */
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Dark overlay */
+    z-index: -1; /* Place the overlay behind content */
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    backdrop-filter: blur(10px); /* Glass effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+}
+
+header {
+    text-align: center; /* Center the header content */
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #fff; /* White header text for better contrast */
+}
+
+header h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #ddd; /* Light gray for subtitle */
+}
+
+.news-item {
+    margin-bottom: 30px;
+    text-align: center; /* Center the news item titles */
+}
+
+.news-item h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #ffcc00; /* Bright yellow for titles */
+}
+
+.news-item p {
+    margin: 0 0 10px;
+    line-height: 1.6;
+    text-align: left; /* Keep the paragraph text aligned to the left */
+    color: #fff; /* White paragraph text for readability */
+}
+
+.news-item p strong center {
+    display: block;
+    text-align: center; /* Ensures centering using CSS */
+    color: #ffcc00; /* Bright yellow for sources */
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+
+    .news-item h3 {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="nameForm">
+        <h1>Enter Your Name</h1>
+        <input type="text" id="nameInput" placeholder="Your name">
+        <button onclick="greetUser()">Submit</button>
+    </div>
+
+    <div class="container hidden" id="greeting">
+        <h1 id="greetingMessage"></h1>
+        <p id="redirectMessage"></p>
+        <button onclick="redirectToNews()">Enter</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
